@@ -1,0 +1,100 @@
+:root {
+    /* Brand Colors */
+    --brand-1: #4263EB;
+    --brand-2: #364FC7;
+
+    /* Grey Colors */
+    --grey-0: #0A0C0D;
+    --grey-1: #212529;
+    --grey-2: #495057;
+    --grey-3: #868E96;
+    --grey-4: #DEE2E6;
+    --grey-5: #F8F9FA;
+    --grey-opacity-1: rgba(33, 37, 41, 0.5);
+    --WhiteFixed: #FFFFFF;
+
+    /* Feedback Palette */
+
+    --feedback-palette: #D7443E;
+
+    /* Fonts */
+    font-family: 'Inter';
+
+
+    /* font weight */
+
+    --font-weight-title1: 700;
+    --font-weight-title2: 600;
+
+    --font-weight-text1: 400;
+    --font-weight-text2: 400;
+    --font-weight-text3: 400;
+
+    /* font size */
+
+    --font-size-title1: 1.75rem;
+    --font-size-title2: 1.25rem;
+
+    --font-size-text1: 1rem;
+    --font-size-text2: 0.875rem;
+    --font-size-text3: 0.75rem;
+
+    /* font line-Height */
+
+    --font-line-Height-title1: 2.5rem;
+    --font-line-Height-title2: 1.5rem;
+
+    --font-line-Height-text1: 1.75rem;
+    --font-line-Height-text2: 1rem;
+    --font-line-Height-text3: 1rem;
+
+}
+
+
+body {
+    min-width: 10rem;
+
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+}
+
+.header__container {
+    background-color: var(--grey-1);
+    width: 100%;
+    padding: 1.875rem 1.25rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .625rem;
+}
+
+.header__logo {
+    width: 4.4869rem;
+    height: .9225rem;
+
+}
+
+.header--logout {
+    color: var(--WhiteFixed);
+    width: 1.625rem;
+    font-weight: var(--font-weight-text2);
+    font-size: var(--font-size-text2);
+
+}
+
+@media (min-width :700px) {
+    .header__container {
+        padding: 1.875rem 6.25rem;
+    }
+
+    .header__logo {
+        width: 7.4869rem;
+    }
+}
